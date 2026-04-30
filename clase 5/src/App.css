@@ -1,0 +1,20 @@
+body {
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+strong {
+  margin: 20px;
+  font-size: 20px;
+}
+
+p {
+  background-color: #000000;
+  padding: 10px;
+  margin: 8px auto;
+  width: 250px;
+}
+.yo {
+  margin: 20px;
+}
