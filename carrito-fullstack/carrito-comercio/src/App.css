@@ -1,0 +1,173 @@
+/* ==========================================
+   SOY MALISIMO CON CSS PERO LA IA AYUDO :V
+   ========================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #1a1a1a;
+    color: #eeeeee;
+    padding: 30px;
+}
+
+h1{ 
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+/* Contenedor principal */
+.xd{
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+
+/* Titulo de productos */
+.titulo, p , h2 , hr{
+    margin-bottom: 25px;
+}
+
+
+/* Zona donde aparecen los productos */
+.productos{
+    flex: 1;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+
+}
+
+
+/* Tarjeta individual del producto */
+.producto{
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Imagen del producto */
+.imagen{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* Nombre del producto */
+.nombre{
+    font-size: 18px;
+    margin: 15px 0 8px;
+}
+
+
+/* Precio */
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+/* Botones generales */
+button{
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+/* Boton agregar */
+.boton{
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Carrito de compras */
+.carrito{
+    width: 350px;
+    background: #2b2b2b;
+    padding: 25px;
+    border-radius: 15px;
+    /* Hace que el carrito quede fijo al bajar */
+    position: sticky;
+    top: 20px;
+}
+
+
+/* Producto dentro del carrito */
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+}
+
+
+/* Nombre producto carrito */
+.producto-carrito{
+    font-weight: 600;
+}
+
+
+
+/* Botones + - eliminar */
+.botones-cantidad{
+    display: flex;
+    gap: 8px;
+}
+
+
+.botones-cantidad button{
+    background: #444;
+    color: white;
+}
+
+/* Total de compra */
+.total{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+
+/* Boton confirmar compra */
+.boton-confirmar{
+    width: 100%;
+    background: #16a34a;
+    color: white;
+    font-size: 16px;
+}
+
+
+.boton-confirmar:hover{
+    background: #15803d;
+}
+
+
+
+/* Mensaje cuando no hay productos */
+.carrito-vacio{
+    text-align: center;
+    color: #aaa;
+}
+
+
+
+/* Para celular */
+@media(max-width:900px){
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .carrito{
+        width: 100%;
+    }
+
+}
