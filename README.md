@@ -22,7 +22,7 @@ después se inicia Expo con el siguiente comando
 ```bash
 npx expo start
 ```
-una vez iniciado el sv se abre la aplicación con expo go
+una vez iniciado el sv se abre la aplicación con expo go y escanea el qr 
 
 
 
